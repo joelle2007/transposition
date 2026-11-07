@@ -1,0 +1,32 @@
+Package: transposition
+Type: Package
+Title: Transposition Matrix T_ij
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Yanou Nana ", "Joëlle Sonia ",
+      email = "joellesoniayanounana@gmail.com",
+      role = c("aut", "cre")
+    )
+  )
+Description: Builds the transpositionmatrix T_ij = I_n-E_ii-E_jj+E_ij+E_ji.Swaps rows or columns of square and non-square matrices and checks the properties of T_ij  
+    Continuation lines should be indented.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.1
+Suggests: 
+    DBI,
+    knitr,
+    rmarkdown,
+    RSQLite,
+    shiny,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    graphics,
+    grDevices,
+    tools
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.5)

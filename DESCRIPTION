@@ -1,0 +1,32 @@
+Package: transposition
+Type: Package
+Title: Transposition Matrix T_ij
+Version: 0.1.0
+Authors@R: 
+    person("Joëlle Sonia", "Yanou Nana",
+           email = "joellesoniayanounana@gmail.com",
+           role = c("aut", "cre"))
+Description: Builds the transposition matrix T_ij = I_n - E_ii - E_jj +
+    E_ij + E_ji, swaps rows or columns of square and non-square matrices,
+    checks the properties of T_ij, ranks zones by priority with a
+    sequence of swaps, and provides an interactive Shiny application.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Config/roxygen2/version: 8.1.1
+Suggests: 
+    DBI,
+    knitr,
+    rmarkdown,
+    RSQLite,
+    shiny,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    graphics,
+    grDevices,
+    tools,
+    utils
+VignetteBuilder: knitr
+Depends: 
+    R (>= 4.0.0)
